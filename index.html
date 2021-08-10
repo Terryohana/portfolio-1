@@ -21,7 +21,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-  <meta name="theme-color" content="#fafafa">
+ <link rel="stylesheet" href="css/swiper-bundle.css" />
+<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+
+ <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
@@ -69,13 +73,18 @@
   <button class="main_btn">Know more...</button></div>
 </section>
 <section id="about"><h2>About</h2>
-<p>Hi! I’m super grateful you are interested in knowing more about me. Let me introduce myself really quickly:
-  My name is Camila Peludero Astrada, I’m a developer with creative background. I’ve working as a designer and Front End Developer for the last 3 years.
-  Always learning.</p></section>
+<p>Hi! I’m super grateful you are interested in knowing more about me. </p>
+<p>Let me introduce myself really quickly:</p>
+  <p>My name is Camila Peludero Astrada, I’m a developer with creative background. I’ve working as a designer and Front End Developer for the last 3 years.
+  Self-learning, compromise and passion about what I do is what makes me enjoy and always embrace any new challenge with the best attitude. I'm currently studying towards a Systems Engineering degree in college.</p>
+  <div class="about-btn">
+    <button class="sec-btn">Download CV</button>
+    <p>or check out my <a href="https://www.linkedin.com/in/camilapeluderoastrada/" target="_blank">Linkedin page</a></p>
+  </div></section>
   <section id="skills" class="skills">
     <div class="skills-text">
       <h2>Skills</h2>
-      <p class="p_18">With skills on different fields like graphic & web design, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.</p>
+      <p>With skills on different fields like graphic & web design, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.</p>
     </div>
     <div class="skill-info">
       <span class="iconify skill" data-icon="carbon:application-web"></span>
@@ -97,13 +106,38 @@
       <h4>UX/UI Design</h4>
       <p class="p_18">Working on UI/UX design has taught me a lot about how to understand users, solve problems and built great products. Beyond graphics and colors, a great design is about comunication and trust.</p>
     </div>
-   <div class="skills-text">
-     <button class="sec-btn">Download CV</button>
-     <p>or check out my <a href="https://www.linkedin.com/in/camilapeluderoastrada/" target="_blank">Linkedin page</a></p>
-   </div>
   </section>
 <section id="projects"><h2>Projects</h2>
 <p>These are some of the projects I made on the past...</p>
+
+<!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="img/project1.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="img/project1.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="img/project1.jpg" alt=""></div>
+    ...
+  </div>
+  <!-- navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <!-- scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 <section id="contact"><h2>Let's talk</h2>
 <p>Now that you know a lot about me and my work, let me know if you have more questions or if are interested in working with me.</p>
@@ -111,10 +145,10 @@
   <label for="name">Name</label>
   <input type="text" name="name" id="name">
   <label for="email">Email</label>
-  <input type="email" name="name" id="name">
+  <input type="email" name="email" id="email">
   <label for="message">Message</label>
   <input type="text" name="message" id="message">
-  <button type="submit">Let's talk!</button>
+  <button type="submit" class="form-btn">Let's talk!</button>
 </form>
 </section>
 
@@ -127,6 +161,8 @@
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
+  <script src="js/swiper-bundle.js"></script>
+  <script src="js/swiper-bundle.min.js"></script> 
   <script src="https://www.google-analytics.com/analytics.js" async></script>
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </body>

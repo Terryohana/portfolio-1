@@ -116,6 +116,7 @@ textarea {
     font-weight: bold;
     font-size: 3em;
     line-height: 98.5%;
+    margin: 1.5rem 0;
   }
 
   h4{
@@ -154,6 +155,7 @@ textarea {
   p{
     font-family: 'PT Sans', sans-serif;
     line-height: 1.5em;
+    font-size: 1.125em;
   }
 
   .sec-btn{
@@ -162,6 +164,7 @@ textarea {
     padding: 1rem;
     width: 100%;
     cursor: pointer;
+    margin: 1.5rem 0;
   }
 
   .sec-btn:hover{
@@ -311,33 +314,83 @@ textarea {
     
   }
 
-  .skills-text{
-    margin-top: 1rem;
+  .about-btn a{
+    color: var(--orange);
+    font-family: 'Poppins', 'Helvetica', sans-serif;
+    
   }
   
   .skill-info {
     margin: 1rem 0;
   }
   
-  .skills-text p {
-    padding-top: 2.5rem;
-  }
-  
   .skills h4 {
     padding: 0.75rem 0;
   }
 
-  .skills-text a{
-    color: var(--orange);
-    font-family: 'Poppins', 'Helvetica', sans-serif;
-    
-  }
+  
   
   .iconify.skill {
     color: var(--orange);
     width: 2rem;
     height: 2rem;
   }
+
+  /* Contact */
+
+  form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  input{
+    height: 2.5rem;
+    margin: .5rem 0;
+    border: 2px solid var(--dark);
+    background-color: transparent;
+  }
+
+  label{
+    font-weight: bold;
+  }
+
+  .form-btn{
+    margin: 1rem 0;
+    padding: .5rem;
+    background-color: var(--dark);
+    color: var(--light);
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+
+  .form-btn:hover{
+    background: var(--orange);
+  }
+  
+  #input-message{
+    padding: .5rem;
+    font-size: 1.125rem;
+    color: var(--dark);
+    background-color: var(--orange);
+    outline: none;
+    border: 0;
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--dark);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--dark);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--dark);
+  }
+
 
 
 
@@ -362,12 +415,7 @@ textarea {
 
     }
 
-    .message_box{
-      height: 2.5rem;
-      margin: 0;
-      border: 2px solid var(--dark);
-    }
-
+  
     .arrow{
       height: 2.4rem;
       width: 2.4rem;
@@ -377,27 +425,8 @@ textarea {
       padding: 0;
     }
 
-    #input-message{
-      padding: .5rem;
-      font-size: 1.125rem;
-      color: var(--dark);
-      background-color: var(--orange);
-      outline: none;
-      border: 0;
-    }
 
-    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: var(--dark);
-      opacity: 1; /* Firefox */
-    }
-    
-    :-ms-input-placeholder { /* Internet Explorer 10-11 */
-      color: var(--dark);
-    }
-    
-    ::-ms-input-placeholder { /* Microsoft Edge */
-      color: var(--dark);
-    }
+   
 
     .nav_hamburger{
       float: left;
@@ -445,6 +474,12 @@ textarea {
       float: right;
       font-size: 1.5rem;
     }
+  }
+
+  .swiper-container {
+    margin: 1.5rem 0;
+    width: 100%;
+    height: 80%;
   }
 
   @media only screen and (min-width: 1440px){
