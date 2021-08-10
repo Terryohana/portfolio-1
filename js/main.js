@@ -1,12 +1,15 @@
 document.addEventListener('DOMContentLoaded', function(){
-        let hamburger = document.querySelector('.nav_hamburger'),
+  
+  
+        let mobileNav = document.querySelector('.mobile-nav'),
+        burgerBtn = document.querySelector('.burger-btn'),
         menu = document.querySelector('.menu');
         
-        hamburger.addEventListener('click', mobileMenu);
+        mobileNav.addEventListener('click', mobileMenu);
         
         function mobileMenu(){
             menu.classList.toggle('open');
-            hamburger.classList.toggle('open');
+            burgerBtn.classList.toggle('open');
         }
         
         const swiper = new Swiper('.swiper-container', {
