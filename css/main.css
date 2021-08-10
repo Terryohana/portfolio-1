@@ -137,6 +137,17 @@ textarea {
   .bold{
     font-weight: bold;
   }
+
+  .underlined{
+    color: var(--color-dark);
+    z-index: 1;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    border-bottom: 1.5px solid var(--orange);
+}
+
+
   p{
     font-family: 'PT Sans', sans-serif;
     line-height: 1.5em;
@@ -365,7 +376,45 @@ textarea {
     font-size: 1.5rem;
   }
 
+  span.job::before {
+    content: "Front End Developer";
+    animation: changingJob infinite 4s;
+    padding-left: 10px;
+}
+
+@keyframes changingJob {
+
+    0% {
+        content: "Web Designer";
+    }
+
+    50% {
+      content: "UI/UX Designer";
+    }
+
+    75% {
+        content: "Graphic Designer";
+    }
+
+    100% {
+        content: "Front End Developer";
+    }
+}
+
   /* About */
+
+  .about-pic{
+    width: 190px;
+    position: relative;
+    float: right;
+    top: -20px;
+    right: -2rem;
+  }
+
+  .about-pic img{
+    width: 190px;
+    height: auto;
+  }
 
   .about-btn a{
     color: var(--orange);
@@ -400,13 +449,43 @@ textarea {
 
   #projects{
     height: 100%;
+    
+  }
+
+  .swiper-slide img{
     width: 100%;
+    height: auto;
+    cover: fit;
   }
 
   /* Contact */
 
   #contact{
     height: 100vh;
+    background-image: url(/img/shapes.svg);
+    
+  }
+
+  #contact i{
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5em;
+    margin: 1rem 1rem 0 0;
+    cursor: pointer;
+  }
+
+  #contact p{
+    letter-spacing: .02em;
+    line-height: 1.8;
+  }
+
+  #contact i:hover{
+    color: var(--orange);
+  }
+
+  .contactMe{
+    background-color: var(--light);
+    margin: 5rem 1rem;
   }
 
 
