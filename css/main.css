@@ -376,31 +376,6 @@ textarea {
     font-size: 1.5rem;
   }
 
-  span.job::before {
-    content: "Front End Developer";
-    animation: changingJob infinite 4s;
-    padding-left: 10px;
-}
-
-@keyframes changingJob {
-
-    0% {
-        content: "Web Designer";
-    }
-
-    50% {
-      content: "UI/UX Designer";
-    }
-
-    75% {
-        content: "Graphic Designer";
-    }
-
-    100% {
-        content: "Front End Developer";
-    }
-}
-
   /* About */
 
   .about-pic{
@@ -455,7 +430,7 @@ textarea {
   .swiper-slide img{
     width: 100%;
     height: auto;
-    cover: fit;
+    object-fit: cover;
   }
 
   /* Contact */
