@@ -102,7 +102,7 @@ textarea {
    }
 
   body{
-    font-family: 'Poppins', 'Helvetica', sans-serif;
+    font-family: 'PT Sans', 'Helvetica', sans-serif;
     background: var(--light);
   }
 
@@ -115,16 +115,17 @@ textarea {
 
   /* Headings */
 
-  h1{
-    font-weight: bold;
-    font-size: 3.5em;
+  h1, h2 {
+    font-family: 'Aclonica',sans-serif;
     line-height: 98.5%;
   }
 
+  h1{
+    font-size: 3.5em;
+  }
+
   h2{
-    font-weight: bold;
     font-size: 3em;
-    line-height: 98.5%;
     margin: 1.5rem 0;
   }
 
@@ -142,8 +143,7 @@ textarea {
     color: var(--color-dark);
     z-index: 1;
     text-decoration: none;
-    font-family: 'Poppins',sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     border-bottom: 1.5px solid var(--orange);
 }
 
@@ -170,24 +170,6 @@ textarea {
   ul li a{
     position: relative;
   }
-
-  
-
-  
-/*
-  .nav_link li a::after{
-    content: '';
-    position: absolute;
-    margin: 0 auto;
-    width: 100%;
-    height: 1rem;
-    left: 0;
-    right: 0;
-    bottom: -4px;
-    background: var(--orange-light);
-  }*/
-
-  
 
   /* Buttons */
 
@@ -393,7 +375,6 @@ textarea {
 
   .about-btn a{
     color: var(--orange);
-    font-family: 'Poppins', 'Helvetica', sans-serif;
     
   }
 
