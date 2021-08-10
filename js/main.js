@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', function(){
+
   
+ 
   
-        let mobileNav = document.querySelector('.mobile-nav'),
+        const mobileNav = document.querySelector('.mobile-nav'),
         burgerBtn = document.querySelector('.burger-btn'),
-        menu = document.querySelector('.menu');
+        menu = document.querySelector('.menu'),
+        navLink = document.querySelectorAll('.nav_link');
         
         mobileNav.addEventListener('click', mobileMenu);
         
@@ -11,6 +14,13 @@ document.addEventListener('DOMContentLoaded', function(){
             menu.classList.toggle('open');
             burgerBtn.classList.toggle('open');
         }
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+        
+        function closeMenu() {
+          burgerBtn.classList.remove("open");
+          menu.classList.remove("open");
+      }
         
         const swiper = new Swiper('.swiper-container', {
             // Optional parameters
@@ -28,4 +38,7 @@ document.addEventListener('DOMContentLoaded', function(){
               el: '.swiper-scrollbar',
             },
           });
+
+          
+          
     });
