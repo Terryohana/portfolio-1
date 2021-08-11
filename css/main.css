@@ -153,6 +153,7 @@ textarea {
     border: 2px solid var(--white);
     cursor: pointer;
     margin: 1rem 0;
+    width: fit-content;
   }
   
   .btn-sec:hover{
@@ -346,7 +347,7 @@ textarea {
   
   .aboutme,
   .mypic {
-    margin-right: 10%;
+    margin: 1.5rem;
   }
   
   .about-btn {
@@ -377,16 +378,36 @@ textarea {
     height: 20rem;
     width: 100%;
     margin: 1.5rem 0;
+    border: 2px solid var(--black);
+    color: var(--black);
+  padding: 2rem 1.5rem;
+  }
+
+  .project-info:nth-child(1){
     background-image: linear-gradient(
       120deg,
       #ffc6b5 0%,
       #fdf4da 48%,
       #b4ffcd 100%
     );
-    border: 2px solid var(--black);
-    color: var(--black);
-    
-  padding: 2rem 1.5rem;
+  }
+
+  .project-info:nth-child(2){
+    background-image: linear-gradient(
+      0deg, 
+      #f3e7e9 0%, 
+      #e3eeff 99%, 
+      #e3eeff 100%
+      );
+  }
+
+  .project-info:nth-child(3){
+    background-image: linear-gradient(
+      70deg, 
+      #d5dee7 0%, 
+      #ffafbd 0%, 
+      #c9ffbf 100%
+      );
   }
   
   .project-info:hover {
@@ -395,6 +416,11 @@ textarea {
       /*background-image: url(/img/project1.jpg);*/
       /*object-fit: cover;*/
       border: 2px solid var(--white);
+  }
+
+  .projects-btn{
+    display: flex;
+    justify-content: center;
   }
   
   /* Contact */
@@ -444,15 +470,12 @@ textarea {
     
   
   @media only screen and (min-width: 768px) {
-    .aboutme,
-    .mypic {
-      width: fit-content;
-    }
+  
     .about-description {
       flex-direction: row;
       justify-content: space-between;
     }
-  
+
     .skillset {
       display: flex;
       flex-direction: row;
