@@ -12,7 +12,7 @@
     <meta property="og:image" content="" />
 
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="img/favicon.png" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -34,7 +34,9 @@
           <h5 class="h5">Hi there! I'm</h5>
           <div class="name"><a href="index.html">camila</a></div>
           <span class="title">Designer & developer</span>
-          <p>I'm a developer with creative background based in Argentina.</p>
+          <p class="hero-p">
+            I'm a developer with creative background based in Argentina.
+          </p>
           <div class="btn-prim"><a href="#about">GET TO KNOW ME</a></div>
         </div>
       </div>
@@ -58,7 +60,7 @@
         </div>
       </div>
     </header>
-    <section id="about">
+    <section id="about" class="about">
       <h5 class="h5 sec-color">This is me!</h5>
       <h2 class="h2">About</h2>
       <div class="about-description">
@@ -98,7 +100,7 @@
       <h5 class="h5 sec-color">THINGS I KNOW ABOUT</h5>
       <div class="skills-text">
         <h2 class="h2">Skills</h2>
-        <p>
+        <p class="skills-p">
           With skills on different fields like graphic & web design, I am the
           perfect person to hire when it comes to a full fledged project.
           Whatever your needs are, I can pretty much take on any challenge!
@@ -156,18 +158,36 @@
       <div class="skills-text">
         <h2 class="h2">Work</h2>
         <div class="projects">
-          <a href="projects/inkani.html"><div class="project-info">
-            <h4 class="h4">INKANI</h4>
-            <p>Brand identity & Website</p>
-          </div></a>
-          <a href="projects/housebrokers.html"><div class="project-info">
-            <h4 class="h4">HOUSE BROKERS</h4>
-            <p>Website</p>
-          </div></a>
-          <a href="projects/studio.html"><div class="project-info">
-            <h4 class="h4">STUDIO</h4>
-            <p>Web App</p>
-          </div></a>
+          <a href="projects/inkani.html"
+            ><div class="project-info project_1">
+              <div class="projects-icons">
+                <a href=""> <i class="fab fa-github"></i></a
+                ><a href=""><i class="fas fa-external-link-alt"></i></a>
+              </div>
+              <h4 class="h4">INKANI</h4>
+              <p>Brand identity & Website</p>
+            </div></a
+          >
+          <a href="projects/housebrokers.html"
+            ><div class="project-info project_2">
+              <div class="projects-icons">
+                <a href=""> <i class="fab fa-github"></i></a
+                ><a href=""><i class="fas fa-external-link-alt"></i></a>
+              </div>
+              <h4 class="h4">HOUSE BROKERS</h4>
+              <p>Website</p>
+            </div></a
+          >
+          <a href="projects/studio.html"
+            ><div class="project-info project_3">
+              <div class="projects-icons">
+                <a href=""> <i class="fab fa-github"></i></a
+                ><a href=""><i class="fas fa-external-link-alt"></i></a>
+              </div>
+              <h4 class="h4">DANCE STUDIO</h4>
+              <p>HTML/CSS/PHP/SQL</p>
+            </div></a
+          >
         </div>
         <div class="projects-btn">
           <div class="btn-sec">
@@ -219,19 +239,8 @@
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </body>

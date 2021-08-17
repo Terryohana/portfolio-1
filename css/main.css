@@ -396,7 +396,19 @@ section {
   padding: 2rem 1.5rem;
 }
 
-.project-info:nth-child(1) {
+.project-info h4{
+  margin: 7.5rem 0 1rem 0;
+}
+
+.projects-icons{
+  font-size: 1.5em;
+  float: right;
+}
+
+.projects-icons i:first-child{
+  margin-right: 1.5rem;
+}
+.project-info.project_1 {
   background-image: linear-gradient(
     120deg,
     #ffc6b5 0%,
@@ -405,7 +417,7 @@ section {
   );
 }
 
-.project-info:nth-child(2) {
+.project-info.project_2 {
   background-image: linear-gradient(
     0deg,
     #f3e7e9 0%,
@@ -414,7 +426,7 @@ section {
   );
 }
 
-.project-info:nth-child(3) {
+.project-info.project_3 {
   background-image: linear-gradient(
     70deg,
     #d5dee7 0%,
@@ -426,53 +438,12 @@ section {
 .project-info:hover {
   color: var(--white);
   background: #1a1a1a;
-  /*background-image: url(/img/project1.jpg);*/
-  /*object-fit: cover;*/
   border: 2px solid var(--white);
   cursor: pointer;
 }
 
-.project-info:hover::after {
-  content: "View project";
-  font: normal bold 1.125em/150% "Ubuntu Mono", monospace;
-  display: block;
-  margin-top: 8rem;
-  animation: slideInUp 1s;
-}
-
-.slideInUp {
-  -webkit-animation-name: slideInUp;
-  animation-name: slideInUp;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes slideInUp {
-  0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-@keyframes slideInUp {
-  0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
 .projects-btn {
-  display: flex;
+  display: none;
   justify-content: center;
 }
 
@@ -519,6 +490,14 @@ footer {
   font: normal 700 1em/150% "Ubuntu Mono", monospace;
   color: var(--grey);
   margin-top: 4rem;
+}
+
+.animate{
+  
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform, opacity;
+  
 }
 
 @media only screen and (min-width: 768px) {
