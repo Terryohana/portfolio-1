@@ -405,7 +405,7 @@ section {
   float: right;
 }
 
-.projects-icons i:first-child{
+.projects-icons i.fa-github{
   margin-right: 1.5rem;
 }
 .project-info.project_1 {
